@@ -9,7 +9,12 @@
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 -->
 	
-<link href="assets/css/uidframework.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/uidframework.css">
+<link rel="stylesheet" href="assets/css/uidmodal.css">
+<link rel="stylesheet" href="assets/css/uidreset.css">
+<link rel="stylesheet" href="assets/css/uidslider.css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/ico/apple-touch-icon-114-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72-precomposed.png">
@@ -17,7 +22,13 @@
                                <link rel="shortcut icon" href="/assets/ico/favicon.png">
 </head>
 <style>
-	body {font: normal 16px 'Open Sans Light', sans-serif; background: #efefef; }
+	body {font: normal 14px/18px 'Open Sans Light', sans-serif; background: #efefef; }
+	#footer-wrap {background:#6c7f93; color:#fff; text-shadow:0 -1px 0 rgba(0,0,0,.5); min-height:40px; margin-top:100px; padding:40px 0;}
+    #footer {padding:5px 0 5px 20px; text-align: center;}
+    #footer a{color:#fff !important;}
+    #footer a:hover{color:#ff9;}
+    #footer-wrap h3{font:normal 24px/28px "Open Sans", Arial; padding:15px 0;}
+
 </style>
 
 <body>
@@ -46,7 +57,10 @@
 
 </div>
 
-
+<div class="cover">
+	<input checked type=radio name=respond id=desktop />
+	<input type=radio name=respond id=tablet />
+	<input type=radio name=respond id=mobile />
 	<article id="slider" class="row-1200-full">
 		<!-- Slider Setup -->
 		<input checked type="radio" name="slider" id="slide1" />
@@ -106,11 +120,11 @@
 			<label for="slide5"></label>
 		</div> <!-- #active -->
 	</article>
+</div>
 
 
 
-
-<div id="content">
+<div id="content" class="show-grid">
 	<div class="row-1200-full padding-top">
 		<div class="col-1 end"></div>
 	</div>
@@ -378,16 +392,114 @@
 </div>
 
 <div id="footer-wrap">
-	<div id="footer">
-		<div id="navbar-footer">
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</div>
-	</div>
-</div>
+  <div class="row-1200">
+    <div class="col-1-4">
+      <h3>About Davao IT</h3>
+      <div class="cc">
+        <div class="col-1-4">
+          <img src="assets/img/portfolio-game-1.jpg" alt="" class="thumb">
+        </div>
+        <div class="col-3-4">
+          <div class="col-pad-10">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, at vitae ipsa harum nesciunt obcaecati illum quae pariatur. Praesentium, expedita, dignissimos ut eum magnam provident aliquid perspiciatis tempora commodi voluptatum aperiam alias aliquam quisquam neque et iste ratione cupiditate laudantium in omnis placeat ipsa quaerat vel quo facere. Aut, asperiores.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-1-4">
+      <h3>Links</h3>
+      <div class="cc">
+        <div class="col-2-4">
+          <ul>
+            <li><a href="javascript:none();">Home</a></li>
+            <li>API</li>
+            <li>Jobs</li>
+            <li>Projects</li>
+            <li>GitHub</li>
+            <li>Search</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div class="col-2-4">
+          <ul>
+            <li>Home</li>
+            <li>API</li>
+            <li>Jobs</li>
+            <li>Projects</li>
+            <li>GitHub</li>
+            <li>Search</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+      </div>
 
+    </div>
+    <div class="col-1-4">
+      <h3>Gallery</h3>
+      <div class="cc">
+        <div class="col-1-4"><a href="#portfolio-game-1"><img src="assets/img/portfolio-game-1.jpg" alt="" class="thumb"></a></div>
+        <div class="col-1-4"><a href="#portfolio-game-2"><img src="assets/img/portfolio-game-2.jpg" alt="" class="thumb"></a></div>
+        <div class="col-1-4"><img src="assets/img/portfolio-game-3.jpg" alt="" class="thumb"></div>
+        <div class="col-1-4"><img src="assets/img/portfolio-game-4.jpg" alt="" class="thumb"></div>
+        <div class="col-1-4"><img src="assets/img/portfolio-game-5.jpg" alt="" class="thumb"></div>
+        <div class="col-1-4"><img src="assets/img/portfolio-game-1.jpg" alt="" class="thumb"></div>
+        <div class="col-1-4"><img src="assets/img/portfolio-game-2.jpg" alt="" class="thumb"></div>
+        <div class="col-1-4"><img src="assets/img/portfolio-game-3.jpg" alt="" class="thumb"></div>
+        <div class="col-1-4"><img src="assets/img/portfolio-game-4.jpg" alt="" class="thumb"></div>
+        <div class="col-1-4"><img src="assets/img/portfolio-game-5.jpg" alt="" class="thumb"></div>
+        <div class="col-1-4"><img src="assets/img/portfolio-game-1.jpg" alt="" class="thumb"></div>
+        <div class="col-1-4"><img src="assets/img/portfolio-game-2.jpg" alt="" class="thumb"></div>
+      </div>
+    </div>
+    <div class="col-1-4">
+      <h3>Tweets</h3>
+      <div class="cc">
+        <div class="col-1-4"><img src="assets/img/portfolio-game-1.jpg" alt="" class="thumb"></div>
+        <div class="col-3-4">
+          <div class="col-pad-10">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, a?</p>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="col-1-4"><img src="assets/img/portfolio-game-2.jpg" alt="" class="thumb"></div>
+        <div class="col-3-4">
+          <div class="col-pad-10">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, a?</p>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="col-1-4"><img src="assets/img/portfolio-game-3.jpg" alt="" class="thumb"></div>
+        <div class="col-3-4">
+          <div class="col-pad-10">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, a?</p>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+<div class="clear clearfix"></div>
+  <div id="footer">
+    DavaoIT Hackerspace Located 2/F Door 8 #238 Araullo Ext., Andreliz Bldg., 8000 Davao City, Philippines | 2241040
+  </div>
+</div>
+      <aside id="portfolio-game-1" class="modal">
+        <div>
+          <h2>Modal box</h2>
+          <img src="assets/img/portfolio-game-1.jpg" alt="">
+          <p>The modal animation is hardware accelerated where supported, on other browsers the animation may be more sluggish.</p>
+          <a href="#close" title="Close">Close</a>
+          </div>
+      </aside>
+      <aside id="portfolio-game-2" class="modal">
+        <div>
+          <h2>Modal box</h2>
+          <img src="assets/img/portfolio-game-2.jpg" alt="">
+          <p>The modal animation is hardware accelerated where supported, on other browsers the animation may be more sluggish.</p>
+          <a href="#close" title="Close">Close</a>
+          </div>
+      </aside>
 </body>
 </html>

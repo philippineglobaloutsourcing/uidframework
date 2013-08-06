@@ -1,48 +1,11 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-body {
-  line-height: 1; }
-ol, ul {
-  list-style: none; }
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle; }
-q, blockquote {
-  quotes: none; }
-  q:before, q:after, blockquote:before, blockquote:after {
-    content: "";
-    content: none; }
-a img {
-  border: none; }
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block; }
+/*
+Package: uid Slider
+License: Public Domain
+uidframework (http://uidesigns.us)
+uidslider.css
+*/
 
 body {
-  font: 14px/22px Arial, Helvetica, sans-serif;
-  color: #333;
-  background: #ddd;
-  margin: 50px auto;
   overflow-x: hidden;
 }
 
@@ -188,7 +151,7 @@ article img {
 #slide3:checked ~ #controls label:nth-child(4), 
 #slide4:checked ~ #controls label:nth-child(5), 
 #slide5:checked ~ #controls label:nth-child(1) {
-	background: url('next.png') no-repeat;
+	background: url('../img/next.png') no-repeat;
 	float: right;
 	margin: 0 -70px 0 0;
 	display: block;
@@ -200,7 +163,7 @@ article img {
 #slide3:checked ~ #controls label:nth-child(2),
 #slide4:checked ~ #controls label:nth-child(3),
 #slide5:checked ~ #controls label:nth-child(4) {
-	background: url('prev.png') no-repeat;
+	background: url('../img/prev.png') no-repeat;
 	float: left;
 	margin: 0 0 0 -70px;
 	display: block;
@@ -475,7 +438,7 @@ article img {
 
 @media only screen and (min-width: 850px) {
 
-	body {
+	.cover {
 		padding: 0 80px;
 	}
 }
