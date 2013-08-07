@@ -7,23 +7,25 @@ http://uidesigns.us
 */
 
 body {padding:0; margin:0;}
-#navbar-wrap {box-shadow: inset 0 0 1px none; height:46px; padding:1px 0 10px 0;}
 .navbar {}
 .navbar li {list-style: none; float: left; padding:0 15px;}
 
 .clear {float: none; clear: both;}
-.container-full{width: 100%; min-height: 500px; background:#9f5fb9;}
+.container-full{width: 100%;}
 
 /* 960px */
 
 .padding-top {padding-top:20px;}
 
-.cc img {width: 100%;}
+.cc-full img, .cc img, .col-1-3 img, .col-1-4 img, .col-2-4 img, .col-3-4 img {width: 100%;}
 img.thumb {width:90%; padding:5%; box-shadow: inset 0 0 1px #000; border-radius: 3px;}
-h3 {font:bold 16px/20px "Open Sans", Arial;}
-p {font:normal 13px/18px "Open Sans", Arial;}
+img.thumb-no-border {width:90%; padding:5%;}
+h3 {font:bold 16px/20px "Open Sans", Arial; margin:10px 0;}
+p {font:normal 13px/20px "Open Sans", Arial; margin:10px 0;}
+.container {width: 100%;}
 
-.row-960 {width:960px; clear: both; float: none; margin:10px auto;}
+
+.row-960 {width:960px; clear: both; float: none; margin:0 auto;}
 .row-960 div {background:none;}
 .row-960 .col-1 {float:left; min-height: 50px; width:940px;}
 .row-960 .col-1-3 {float:left; margin:0 10px; min-height: 50px; width:300px;}
@@ -46,7 +48,7 @@ p {font:normal 13px/18px "Open Sans", Arial;}
 /* 1200px */
 
  
-.row-1200 {width:1200px; clear: both; float: none; margin:10px auto;}
+.row-1200 {width:1200px; clear: both; float: none; margin:0 auto;}
 .row-1200 div {background:none;}
 .row-1200 .col-1 {float:left; min-height: 50px; width:1180px;}
 .row-1200 .col-1-3 {float:left; margin:0 10px; min-height: 50px; width:380px;}
@@ -66,7 +68,7 @@ p {font:normal 13px/18px "Open Sans", Arial;}
 
 /* 960px full */
 
-.row-960-full {width:960px; clear: both; float: none; margin:10px auto;}
+.row-960-full {width:960px; clear: both; float: none; margin:0 auto;}
 .row-960-full div {background:none;}
 .row-960-full .col-1 {float:left; min-height: 50px; width:960px;}
 .row-960-full .col-1-3 {float:left; min-height: 50px; width:320px;}
@@ -85,7 +87,7 @@ p {font:normal 13px/18px "Open Sans", Arial;}
 .row-960-full .col-5-6 {float:left; min-height: 50px; width:800px;}
 
 /* 1200px */
-.row-1200-full {width:1200px; clear: both; float: none; margin:10px auto;}
+.row-1200-full {width:1200px; clear: both; float: none; margin:0 auto;}
 .row-1200-full div {background:#none;}
 .row-1200-full .col-1 {float:left; min-height: 50px; width:1200px;}
 .row-1200-full .col-1-3 {float:left; min-height: 50px; width:400px;}
@@ -104,28 +106,88 @@ p {font:normal 13px/18px "Open Sans", Arial;}
 .row-1200-full .col-5-6 {float:left; min-height: 50px; width:1000px;}
 
 /* column inside a column */
-.cc {clear: both; float: none; margin:0; padding: 0;}
-.row-960 .cc div {margin:0; padding: 0;}
-.row-1200 .cc div {margin:0; padding: 0;}
-.cc .col-1-3 {float:left; min-height: 50px; width:33.33%;}
-.cc .col-2-3 {float:left; min-height: 50px; width:66.66666666%;}
-.cc .col-1-4 {float:left; min-height: 50px; width:25%;}
-.cc .col-2-4 {float:left; min-height: 50px; width:50%;}
-.cc .col-3-4 {float:left; min-height: 50px; width:75%;}
-.cc .col-1-5 {float:left; min-height: 50px; width:20%;}
-.cc .col-2-5 {float:left; min-height: 50px; width:40%;}
-.cc .col-3-5 {float:left; min-height: 50px; width:60%;}
-.cc .col-4-5 {float:left; min-height: 50px; width:80%;}
-.cc .col-1-6 {float:left; min-height: 50px; width:16.66666666%;}
-.cc .col-2-6 {float:left; min-height: 50px; width:33.33%px;}
-.cc .col-3-6 {float:left; min-height: 50px; width:50%;}
-.cc .col-4-6 {float:left; min-height: 50px; width:66.66666666%;}
-.cc .col-5-6 {float:left; min-height: 50px; width:83.33%;}
+.cc-full {clear: both; float: none; margin:0; padding: 0;}
+.row-960 .cc-full div {margin:0; padding: 0;}
+.row-1200 .cc-full div {margin:0; padding: 0;}
+.cc-full .col-1-3 {float:left; min-height: 50px; width:33.33%;}
+.cc-full .col-2-3 {float:left; min-height: 50px; width:66.66666666%;}
+.cc-full .col-1-4 {float:left; min-height: 50px; width:25%;}
+.cc-full .col-2-4 {float:left; min-height: 50px; width:50%;}
+.cc-full .col-3-4 {float:left; min-height: 50px; width:75%;}
+.cc-full .col-1-5 {float:left; min-height: 50px; width:20%;}
+.cc-full .col-2-5 {float:left; min-height: 50px; width:40%;}
+.cc-full .col-3-5 {float:left; min-height: 50px; width:60%;}
+.cc-full .col-4-5 {float:left; min-height: 50px; width:80%;}
+.cc-full .col-1-6 {float:left; min-height: 50px; width:16.66666666%;}
+.cc-full .col-2-6 {float:left; min-height: 50px; width:33.33%px;}
+.cc-full .col-3-6 {float:left; min-height: 50px; width:50%;}
+.cc-full .col-4-6 {float:left; min-height: 50px; width:66.66666666%;}
+.cc-full .col-5-6 {float:left; min-height: 50px; width:83.33%;}
+
+.cc {clear: both; float: none; margin:0; padding: 0; min-height: 50px;}
+.cc .col-1-3 {float:left; margin:0; min-height: 50px; width:30.33%; padding:0 1.5%;}
+.cc .col-2-3 {float:left; margin:0; min-height: 50px; width:63.66666666%; padding:0 1.5%;}
+.cc .col-1-4 {float:left; margin:0; min-height: 50px; width:22%; padding:0 1.5%;}
+.cc .col-2-4 {float:left; margin:0; min-height: 50px; width:47%; padding:0 1.5%;}
+.cc .col-3-4 {float:left; margin:0; min-height: 50px; width:72%; padding:0 1.5%;}
+.cc .col-1-5 {float:left; margin:0; min-height: 50px; width:17%; padding:0 1.5%;}
+.cc .col-2-5 {float:left; margin:0; min-height: 50px; width:37%; padding:0 1.5%;}
+.cc .col-3-5 {float:left; margin:0; min-height: 50px; width:57%; padding:0 1.5%;}
+.cc .col-4-5 {float:left; margin:0; min-height: 50px; width:77%; padding:0 1.5%;}
+.cc .col-1-6 {float:left; margin:0; min-height: 50px; width:13.66666666%; margin:0 1.5%;}
+.cc .col-2-6 {float:left; margin:0; min-height: 50px; width:30.33%px; padding:0 1.5%;}
+.cc .col-3-6 {float:left; margin:0; min-height: 50px; width:47%; padding:0 1.5%;}
+.cc .col-4-6 {float:left; margin:0; min-height: 50px; width:63.66666666%; padding:0 1.5%;}
+.cc .col-5-6 {float:left; margin:0; min-height: 50px; width:80.33%; padding:0 1.5%;}
+
+
+
+.cc .start {float:left; min-height: 50px; padding:0 10px 0 0;}
+.cc .end {float:left; min-height: 50px; padding:0 0 0 10px;}
+
 
 /* paddings */
 .col-pad-5 {padding:0 5px !important;}
 .col-pad-10 {padding:0 10px !important;}
 
 
-.show-grid {box-shadow: inset 0 0 1px red;}
-.show-grid div {box-shadow: inset 0 0 1px red;}
+.show-grid {box-shadow: inset 0 0 1px red !important;}
+.show-grid div {box-shadow: inset 0 0 1px red !important;}
+
+.hide-grid {box-shadow: none;}
+.hide-grid div {box-shadow: none;}
+
+
+.navigation { padding:0; margin:0;}
+.navigation li a {padding:10px 18px; text-decoration: none; color:#fff; display: inline-block;}
+.navigation li a:hover {color:#fff; background:#cc7f93;}
+.navigation li {float: left; list-style: none; padding:0; margin:0;}
+
+.button {padding:10px 18px; text-decoration: none; color:#fff; display: inline-block; background:#6c7f93;}
+.button.red {background:#bb3527;}
+.button.red:hover {background:#e44f4f;}
+.button.green {background:#24a85a;}
+.button.green:hover {background:#34ce77;}
+.button.blue {background:#2679b4;}
+.button.blue:hover {background:#3a9ddd;}
+.button.orange {background:#cf4e00;}
+.button.orange:hover {background:#e78328;}
+.button.violet {background:#804699;}
+.button.violet:hover {background:#9f5fb9;}
+.button.yellow {background:#f29610;}
+.button.yellow:hover {background:#f2c713;}
+.button.darkblue {background:#394959;}
+.button.darkblue:hover {background:#6c7f93;}
+.button.dark {background:#2a2a2a;}
+.button.dark:hover {background:#5a5a5a;}
+.button.light {background:#a5a5a5;}
+.button.light:hover {background:#e5e5e5;}
+
+
+
+
+
+
+
+
+.row-spacer {margin:30px auto !important;}
